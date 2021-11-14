@@ -456,7 +456,6 @@ address {
   width: 370px;
   margin: 15px;
   border: 1px solid #eeeeee;
-  padding-bottom: 20px;
 }
 
 .project-title {
@@ -477,4 +476,9 @@ address {
   color: var(--secondary-text-color);
   margin-left: 24px;
   margin-top: 4px;
+}
+
+.project-box {
+  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
 }
