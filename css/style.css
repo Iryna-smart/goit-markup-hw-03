@@ -56,12 +56,8 @@ ul {
   text-decoration: none;
 }
 
-.main-container {
-  width: 1600px;
-}
-
-/* --------------------------------------Header-------------------------------------------- */
-.container-header {
+/* -------------Header------------- */
+.container {
   width: 1200px;
   display: flex;
   align-items: center;
@@ -71,10 +67,19 @@ ul {
   padding-right: 15px;
 }
 
+.container-header {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 1px solid #ececec;
+}
 .header-nav {
   display: flex;
   align-items: center;
-
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -119,7 +124,6 @@ ul {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -141,25 +145,29 @@ ul {
   color: var(--accent-color);
 }
 
-/* ---------------------------------------------Hero----------------------------------------- */
+/* -----------Hero------------ */
 .hero {
-  max-width: 1600px;
   height: 600px;
   background-color: rgba(47, 48, 58, 1);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-content {
+  width: 696px;
+  margin: 0 auto;
+  padding-top: 200px;
+  text-align: center;
 }
 
 .hero-title {
   display: block;
-  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-title-color);
-  margin: 0 auto;
-  padding-top: 200px;
 }
 
 .hero-btn {
@@ -168,12 +176,9 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-  position: absolute;
   border-radius: 4px;
+  margin-top: 30px;
 
   width: 200px;
   height: 50px;
@@ -181,6 +186,7 @@ ul {
   top: 430px;
   color: var(--secondary-title-color);
   background: var(--accent-color);
+  border: none;
 }
 
 .hero-btn:hover,
@@ -188,7 +194,8 @@ ul {
   background: var(--secondary-background-button);
 }
 
-/* -----------------------------------------Work------------------------------------- */
+/* ------------Work------------- */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -237,7 +244,7 @@ ul {
   color: var(--secondary-text-color);
 }
 
-/* -----------------Example-------------- */
+/* --------Example----------- */
 
 .example {
   width: 1200px;
@@ -270,11 +277,12 @@ ul {
   margin-left: 0;
 }
 
-/* -------------------Team----------------------------------------------------- */
-.team-container {
+/* -------------Team------------- */
+
+.team {
   background: #f5f4fa;
 }
-.team {
+.team-container {
   width: 1200px;
   padding: 0 15px 0 15px;
   margin-left: auto;
@@ -289,7 +297,6 @@ ul {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  padding-bottom: 30px;
 }
 
 .team-item {
@@ -337,10 +344,17 @@ ul {
   padding-bottom: 30px;
 }
 
-/* ------------------------------------Footer------------------------------- */
+/* -----------Footer------------ */
+
 .footer {
   background-color: rgba(47, 48, 58, 1);
-  padding-left: 215px;
+}
+
+.footer-container {
+  width: 1200px;
+  padding: 0 15px 0 15px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -373,6 +387,18 @@ address {
   color: var(--secondary-title-color);
 }
 
+.footer-contact {
+  margin-top: 20px;
+}
+
+.contact-item {
+  margin-bottom: 9px;
+}
+
+.footer-contact .contact-item:last-child {
+  margin-bottom: 0;
+}
+
 .footer-link {
   font-weight: 400;
   font-size: 14px;
@@ -386,22 +412,16 @@ address {
   color: var(--secondary-title-color);
 }
 
-/* -------------------------------------Filter----------------------------------- */
-.line {
-  border-bottom: 1px solid #ececec;
-}
+/* -----------Filter-------------- */
 
-.portfolio {
+.portfolio-container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 94px;
-}
-
-.filter-item {
-  margin-left: 8px;
+  margin-bottom: 94px;
 }
 
 .filter-list {
@@ -433,8 +453,15 @@ address {
   color: var(--secondary-title-color);
   background: var(--secondary-background-button);
 }
+.filter-list .filter-item:not(:last-child) {
+  margin-right: 8px;
+}
 
-/* -------------------------------------Project------------------------------- */
+.filter-list .filter-item:not(:first-child) {
+  margin-left: 8px;
+}
+
+/* ----------Project------------ */
 
 .project-container {
   width: 1200px;
@@ -442,7 +469,6 @@ address {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
 }
 
 .project-list {
