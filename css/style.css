@@ -1,4 +1,4 @@
-html {
+-html {
   box-sizing: border-box;
 }
 
@@ -57,7 +57,7 @@ ul {
 }
 
 .container {
-  width: 1200px;
+  width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -75,7 +75,7 @@ ul {
 }
 
 .container-header {
-  width: 1200px;
+  width: 1170px;
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -221,7 +221,7 @@ ul {
 
 .work-list {
   display: flex;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .work-item {
@@ -252,6 +252,7 @@ ul {
 
 .example-list {
   display: flex;
+  justify-content: space-between;
 }
 
 .example-title {
@@ -283,8 +284,9 @@ ul {
 
 .team-list {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: space-between;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   margin-top: 50px;
 }
 
@@ -340,7 +342,7 @@ ul {
 }
 
 .container-footer {
-  width: 1200px;
+  width: 1170px;
   padding: 0 15px 0 15px;
   margin-left: auto;
   margin-right: auto;
@@ -404,7 +406,7 @@ address {
 /* -----------Filter-------------- */
 
 .portfolio-container {
-  width: 1200px;
+  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -434,16 +436,12 @@ address {
   border-radius: 4px;
   border: none;
   padding: 6px 22px;
-  margin-right: 8px;
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--secondary-title-color);
   background: var(--secondary-background-button);
-}
-.filter-list .filter-item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .filter-list .filter-item:not(:first-child) {
@@ -453,7 +451,7 @@ address {
 /* ----------Project------------ */
 
 .project-container {
-  width: 1200px;
+  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -463,14 +461,12 @@ address {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 20px;
-  margin: -15px;
+  margin: -15px -15px;
 }
 
 .project-item {
   width: 370px;
   margin: 15px;
-  border: 1px solid #eeeeee;
 }
 
 .project-title {
@@ -479,8 +475,8 @@ address {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-title-color);
-  margin-left: 24px;
-  margin-top: 20px;
+  /* margin-left: 24px; */
+  /* margin-top: 20px; */
 }
 
 .project-text {
@@ -489,11 +485,11 @@ address {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin-left: 24px;
+
   margin-top: 4px;
 }
 
 .project-box {
-  padding-bottom: 20px;
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
